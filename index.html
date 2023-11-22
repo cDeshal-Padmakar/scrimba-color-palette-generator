@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- inter font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h2>Color Pallet Generator</h2>
+            <div class="container">
+                <form class="color-form" id="color-form">
+                    <input 
+                        type="color" 
+                        name="color-input" 
+                        value="#7609FB" 
+                        class="color-input flex-item"
+                        id="color-input"
+                        >
+                    <select class="color-scheme flex-item" id="color-scheme" name="color-scheme">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                    </select>
+                    <button class="submit-btn flex-item" id="submit-btn" type="submit">Get color scheme</button>
+                </form>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="colors-container" id="colors-container"></div>
+            </div>
+        </main>
+
+        <div class="copied" id="copied">Copied to clipboard!</div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
